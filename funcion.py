@@ -1,6 +1,7 @@
 """
 ***************** DECODIFICADOR EN PYTHON **********************
 ***************Autor: MAURO EMMANUEL RAMBO *****************"""
+
 from math import exp
 from math import log10
 import random
@@ -49,31 +50,31 @@ while True:
   print('-----------------------------------------------------------------')
   print(' ')
   if idioma == 'I':
-    f = open('C:\\Users\\Mauro\\Desktop\\PythonDecoder\\frecuencias\\ingles_espacios.txt')
+    f = open('frecuencias\\ingles_espacios.txt')
     print("Idioma seleccionado Ingles")
     print('-----------------------------------------------------------------')
     print(' ')
     break
   elif idioma == 'E':
-    f = open('C:\\Users\\Mauro\\Desktop\\PythonDecoder\\frecuencias\\espanol_espacios.txt')
+    f = open('frecuencias\\espanol_espacios.txt')
     print("Idioma seleccionado Español")
     print('-----------------------------------------------------------------')
     print(' ')
     break
   elif idioma == 'A':
-    f = open('C:\\Users\\Mauro\\Desktop\\PythonDecoder\\frecuencias\\aleman_espacios.txt')
+    f = open('frecuencias\\aleman_espacios.txt')
     print("Idioma seleccionado Español")
     print('-----------------------------------------------------------------')
     print(' ')
     break
   elif idioma == 'F':
-    f = open('C:\\Users\\Mauro\\Desktop\\PythonDecoder\\frecuencias\\frances_espacios.txt')
+    f = open('frecuencias\\frances_espacios.txt')
     print("Idioma seleccionado Español")
     print('-----------------------------------------------------------------')
     print(' ')
     break 
   elif idioma == 'IT':
-    f = open('C:\\Users\\Mauro\\Desktop\\PythonDecoder\\frecuencias\\italiano_espacios.txt')
+    f = open('frecuencias\\italiano_espacios.txt')
     print("Idioma seleccionado Español")
     print('-----------------------------------------------------------------')
     print(' ')
