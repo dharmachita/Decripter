@@ -23,12 +23,9 @@ for c in k:
     idx += 1
   t += alpha[c]
 
-print('-----------------------------------------------------------------')
-print(' ')
-print('La transliteracion del texto seleccionado es la siguiente:',t)
-print(' ')
-print('-----------------------------------------------------------------')
-print(' ')
+print('-----------------------------------------------------------------\n\
+La transliteracion del texto seleccionado es la siguiente:',t,'\n\
+-----------------------------------------------------------------')
 
 """Si se sabe que el texto posee espacio, y se tiene una hipótesis sobre el caracter
 que se usa como espacio, se puede reemplazar el mismo por un guion bajo y 
@@ -38,50 +35,43 @@ Si no se reconoce el espacio comentar esta instruccion y usar el archivo sin esp
 
 caracter=input('Seleccione el caracter que corresponde a los espacios: ')
 t=t.replace(caracter,'_')
-print('-----------------------------------------------------------------')
-print(' ')
+print('-----------------------------------------------------------------\n')
 
 
 #Elegir el idioma con el que se va a hacer la prueba
 
 
 while True:
-  idioma=input('Seleccione el idioma del texto a analizar Ingles(I), Español(E), Frances(F), Aleman(A), Italiano (IT): ')
-  print('-----------------------------------------------------------------')
-  print(' ')
+  idioma=input('Seleccione el idioma del texto a analizar Ingles(I), \
+Español(E), Frances(F), Aleman(A), Italiano (IT): ')
+  print('-----------------------------------------------------------------\n')
   if idioma == 'I':
     f = open('frecuencias\\ingles_espacios.txt')
-    print("Idioma seleccionado Ingles")
-    print('-----------------------------------------------------------------')
-    print(' ')
+    print('Idioma seleccionado Ingles\n\
+    -----------------------------------------------------------------\n')
     break
   elif idioma == 'E':
     f = open('frecuencias\\espanol_espacios.txt')
-    print("Idioma seleccionado Español")
-    print('-----------------------------------------------------------------')
-    print(' ')
+    print('Idioma seleccionado Español\n\
+-----------------------------------------------------------------\n')
     break
   elif idioma == 'A':
     f = open('frecuencias\\aleman_espacios.txt')
-    print("Idioma seleccionado Español")
-    print('-----------------------------------------------------------------')
-    print(' ')
+    print('Idioma seleccionado Aleman\n\
+-----------------------------------------------------------------\n')
     break
   elif idioma == 'F':
     f = open('frecuencias\\frances_espacios.txt')
-    print("Idioma seleccionado Español")
-    print('-----------------------------------------------------------------')
-    print(' ')
+    print('Idioma seleccionado Frances\n\
+-----------------------------------------------------------------\n')
     break 
   elif idioma == 'IT':
     f = open('frecuencias\\italiano_espacios.txt')
-    print("Idioma seleccionado Español")
-    print('-----------------------------------------------------------------')
-    print(' ')
+    pprint('Idioma seleccionado Italiano\n\
+-----------------------------------------------------------------\n')
     break       
   else:
-    print("Idioma No Seleccionado")
-    print(' ')
+    print('Idioma No Seleccionado\n')
 
 
 """Se crea un diccionario que devuelve la frecuencia de
@@ -199,7 +189,7 @@ def  AnnouncementSS ( crypto ,  max_iter  =  8000 ,  CoolRatio  =  0.8  ):
     return simple_substitution ( best_alpha ,  crypto )  
 
 
-iteraciones=int(input("Ingrese el numero de iteraciones (generalmente entre 8000 y 30000: "))
+iteraciones=int(input("Ingrese el numero de iteraciones (generalmente entre 8000 y 30000): "))
 
 decifrado = AnnouncementSS(t, max_iter=iteraciones)
 
