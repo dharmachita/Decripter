@@ -1,7 +1,7 @@
 ##### Subido a Git para postulación de Computrabajo (Resolvé el desafío)
 
 # Decripter
-### Algoritmo que desencripta un texto utilizando sustitución monoalfabetica simple. Mediante el uso de un diccionario de pesos (frencuencia) de cuadragramas (4 caracteres) evalúa la probabilidad de que el texto sustituído pertenezca al idioma dado, devolviendo como resultado un *Array* con el *String* de mayor probabilidad y el alfabeto de sustitución usado.    
+### Algoritmo que desencripta un texto utilizando sustitución monoalfabetica simple. Mediante el uso de un diccionario de pesos (frecuencia) de cuadragramas (4 caracteres) evalúa la probabilidad de que el texto sustituído pertenezca al idioma dado, devolviendo como resultado un *Array* con el *String* de mayor probabilidad y el alfabeto de sustitución usado.    
 
 
 Se pueden identificar 4 partes escenciales que componen la resolución del problema:
